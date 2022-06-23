@@ -239,7 +239,7 @@ section {
     font-size: 17px;
     text-align: justify;
     line-height: 26px;
-    margin-top: 20px;
+    margin-block: 20px;
 }
 
 section.dark {
@@ -260,24 +260,6 @@ section.dark .section-title::before {
 
 section.dark .section-title::after {
     border: 4px solid #353b48;
-}
-
-.skills {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.skill {
-    width: calc(33% - 20px);
-    text-align: center;
-    border: 1px solid #8da6c2;
-    border-radius: 6px;
-    margin: 20px 0;
-    padding: 40px 20px;
-    color: #fff;
-    cursor: pointer;
-    transition: .3s linear;
 }
 
 
@@ -364,6 +346,9 @@ section.dark .section-title::after {
     transform: scale(0);
 }
 
+
+/* My work  Info Text*/
+
 .work .info {
     position: absolute;
     z-index: 2;
@@ -374,8 +359,11 @@ section.dark .section-title::after {
     opacity: 0;
 }
 
+
+/* My work Hover */
+
 .work:hover img {
-    transform: scale(1.6);
+    transform: scale(1.6)
 }
 
 .work:hover::before,
@@ -418,6 +406,12 @@ section.dark .section-title::after {
     border-radius: 4px;
     cursor: pointer;
     transition: .3s linear;
+
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
 }
 
 .contact-info i {
@@ -549,10 +543,6 @@ footer {
     }
     .work {
         width: 100%;
-    }
-    .nameZone,
-    .emailZone {
-        max-width: 100%;
     }
 }
 
